@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gloria+Hallelujah&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gloria+Hallelujah&family=Merienda:wght@300..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.main-body{
+    /* background-image: url("resource/background-body.svg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    background-image: url("resource/logo.svg");
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("font/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Honey";
+    src: url("font/HoneyScript-Light.ttf");
+}
+
+*{
+    font-family: "Quicksand";
+    font-size: 14px;
+}
+
+.title01{
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.background{
+    background-image: url("resource/background.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cheader{
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.wheader{
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+}
+
+.title02{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title08{
+    font-family: "Shantell Sans", cursive;
+    font-weight: bold;
+}
+
+.cart-icon{
+    background-image: url("resource/carticon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.poster-img-1{
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.poster-caption{
+    margin-bottom: 200px;
+}
+
+.poster-caption-1{
+    margin-bottom: 70px;
+    margin-right: 280px;
+}
+
+.poster-title{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.poster-txt{
+    font-size: 20px;
+    color: gray;
+}
+
+.signout:hover{
+    cursor: pointer;
+}
+
+.pm{
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pm1{
+    background-image: url("resource/payment_method/visa_img.png");
+}
+
+.pm2{
+    background-image: url("resource/payment_method/mastercard_img.png");
+}
+
+.pm3{
+    background-image: url("resource/payment_method/american_express_img.png");
+}
+
+.pm4{
+    background-image: url("resource/payment_method/paypal_img.png");
+}
+
+.singleProduct{
+    padding-top: 65px;
+    padding-bottom: 145px;
+    padding: 20px;
+}
+
+.mainImg{
+    height: 640px;
+    background-image: url("resource/empty.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-qty{
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+}
+
+.qty-buttons{
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px rgb(72,71,71);
+}
+
+.qty-inc,.qty-dec{
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.qty-inc{
+    border-top-right-radius: 5px;
+}
+
+.qty-dec{
+    border-bottom-right-radius: 5px;
+}
+
+.emptyView{
+    height: 400px;
+    background-image: url("resource/watchlistEmptyView.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.emptyCart{
+    height: 400px;
+    background-image: url("resource/emptycart.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.invoiceHeaderImage{
+    height: 80px;
+    background-image: url("resource/logo.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.message_box,
+.chat_box{
+    height: 510px;
+    overflow-y: scroll;
+}
+
+.first-place{
+    height: 90px;
+    background-image: url("resource/firstplace.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card{
+    background: transparent;
+
+}
+
+
+
+/* @keyframes borderAnimation {
+  0% {
+    border-color: #ff0000;
+  }
+  25% {
+    border-color: #00ff00;
+  }
+  50% {
+    border-color: #0000ff;
+  }
+  75% {
+    border-color: #ffff00;
+  }
+  100% {
+    border-color: #ff0000;
+  }
+} */
+
+.animated-border {
+  border: 5px solid;
+  animation: borderAnimation 5s infinite;
+}
+
+.box3{
+    height: 100vh;
+    position: fixed;
+}
+
+.box3 ul li{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(deepskyblue,transparent,transparent);
+    bottom: 0;
+    left: 10wh;
+    animation: animatebg 15s linear infinite;
+    margin-left: 50px;
+}
+
+.box3 ul li:nth-child(2){
+    left: 37vw;
+    animation-delay: 5s;
+}
+.box3 ul li:nth-child(3){
+    left: 25vw;
+    animation-delay: 4s;
+}
+.box3 ul li:nth-child(4){
+    left: 60vw;
+    animation-delay: 6s;
+}
+.box3 ul li:nth-child(5){
+    left: 75vw;
+    animation-delay: 4s;
+}
+.box3 ul li:nth-child(6){
+    left: 85vw;
+    animation-delay: 5s;
+}
+
+@keyframes animatebg {
+    0%{
+        transform: scale(0);
+        opacity: 1;
+        bottom: 0px;
+    }
+
+    100%{
+        transform: scale(10);
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
+
+
+.wrap {
+  /* height: 100%; */
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  display: inline-flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #8ad14f;
+  background: linear-gradient(
+    90deg,
+    rgb(203, 230, 129) 0%,
+    rgb(148, 209, 79) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(185, 209, 79, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  
+}
+
+.button::before {
+  content: "";
+  border-radius: 1000px;
+  /* min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px); */
+  /* border: 6px solid #00ffcb; */
+  box-shadow: 0 0 60px rgba(229, 255, 0, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+  animation: ring 1.5s infinite;
+}
+
+.button:hover,
+.button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
+}
+
+.button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #c8ff00;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button:hover::after,
+.button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.dropdown{
+    position: relative;
+}
+
+.nav-item:hover{
+    color: #0099ff;
+    background-color: #000000;
+    border-left: 5px solid #00d9ff;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 80px;
+      height: 80px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+  }
