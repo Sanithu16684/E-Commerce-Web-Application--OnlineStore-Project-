@@ -26,12 +26,12 @@ if (isset($_POST["email"]) && isset($_POST["name"])) {
             $mail->IsSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'sanithuruwanpathirana@gmail.com';
-            $mail->Password = 'kqmqxsbsudgaiwql';
+            $mail->Username = 'sender email';
+            $mail->Password = 'your app password here';
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
-            $mail->setFrom('sanithuruwanpathirana@gmail.com', 'Admin Verification');
-            $mail->addReplyTo('sanithuruwanpathirana@gmail.com', 'Admin Verification');
+            $mail->setFrom('sender email', 'Admin Verification');
+            $mail->addReplyTo('sender email', 'Admin Verification');
             $mail->addAddress($umail);
             $mail->isHTML(true);
             $mail->Subject = 'eShop Admin Login Verification Code for Add new category';
