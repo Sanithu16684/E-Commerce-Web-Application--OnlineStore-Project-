@@ -24,12 +24,12 @@ if (isset($_GET["e"])) {
         $mail->IsSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sanithuruwanpathirana@gmail.com';
-        $mail->Password = 'kqmqxsbsudgaiwql';
+        $mail->Username = 'sender email';
+        $mail->Password = 'your app password here';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('sanithuruwanpathirana@gmail.com', 'Reset Password');
-        $mail->addReplyTo('sanithuruwanpathirana@gmail.com', 'Reset Password');
+        $mail->setFrom('sender email', 'Reset Password');
+        $mail->addReplyTo('sender email', 'Reset Password');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Online Store Forgot password Verification Code';
